@@ -40,32 +40,24 @@ $x(n)$ & $(x(0)+nd)u(n)$ & general term \\ \hline
 \myvec{12 \\ 94}
 &=
 \myvec{x(0) + 2d \\ 47d}
+\label{eq:4}
 \end{align}
-\begin{enumerate}
-\item By equating the both matrices, we get
-\begin{align}
-\label{eq:5}
-12&=x(0)+2d\\
-\label{eq:6}
-94&=47d 
-\end{align}
-\item On solving \eqref{eq:5} and \eqref{eq:6}, we get
+ From \eqref{eq:4}, we get
 \begin{align}
 \implies &x(0)=8\\
 \implies &d=2
 \end{align}
-\item From the \tabref{tab:table1} :
+From the \tabref{tab:table1} :
 \begin{align}
 x(n)&=(x(0)+nd)u(n)\\
 \implies x(n)&=(8+2n)u(n)
 \end{align}
-\item Finding $x(28)$ :
+ Finding $x(28)$ :
 \begin{align}
 x(28)&=x(0)+28(2)\\
 \implies x(28)&=64
 \end{align}
-\item Z-transform :
-\end{enumerate}\\
+ Z-transform :
 \begin{equation}
 \implies X(z)=\frac{8-6z^{-1}}{(1-z^{-1})^2} \quad \abs{z}>1
 \end{equation}
