@@ -22,7 +22,7 @@ if highlight_value_1 != 0:
 plt.grid(True)    
 plt.xlabel('n')
 plt.ylabel('x(n)')
-plt.title('AP')
+plt.title('')
 plt.tight_layout()
 plt.savefig('plot.png')
 plt.show()
