@@ -26,21 +26,19 @@ $S(n)$ & $S(n)=\sum^{n-1}_{k=0}x(k)$ & Sum of n terms \\ \hline
 \caption{Input parameters}
 \label{tab:table1}
 \end{table}
-\begin{enumerate}
- \item From \eqref{tab:table1}
+ From \eqref{tab:table1}
 \begin{align}
 \label{eq:1}
  S(n)&=\sum^{n-1}_{l=0}(\sum^{l}_{k=0}8(10)^k)u(l)
  \end{align}
- \item On solving \eqref{eq:1}, we get
+ On solving \eqref{eq:1}, we get
  \begin{align}
  \implies S(n)&=\left(\frac{8}{81}\right)(10^{n+1}-9n-10)
  \end{align}
- \item Z transform of general term
+ Z transform of general term
  \begin{align}
  X(z)&=\sum_{l=-\infty}^{\infty}(\sum_{k=0}^{l}8(10)^k)u(n)z^{-l}\\[6pt]
  X(z)&=\sum_{l=0}^{\infty}(\sum_{k=0}^{l}8(10)^k)z^{-l}\\[6pt]
  \implies X(z)&=\frac{8}{9}\left(\frac{100z^{-1}}{1-10z^{-1}}-\frac{z^{-1}}{1-z^{-1}}\right) \quad \abs{z}>10
  \end{align}
- \end{enumerate}
  \end{document}

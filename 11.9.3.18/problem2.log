@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.7)  9 FEB 2024 22:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.7)  12 FEB 2024 15:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -305,7 +305,7 @@ Underfull \hbox (badness 4454) in paragraph at lines 13--28
  []
 
 
-Overfull \hbox (31.93555pt too wide) detected at line 44
+Overfull \hbox (7.93555pt too wide) detected at line 43
 []
  []
 
@@ -319,10 +319,10 @@ Overfull \hbox (31.93555pt too wide) detected at line 44
 ### simple group (level 1) entered at line 18 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 3874 strings out of 478287
- 61971 string characters out of 5849290
+ 3872 strings out of 478287
+ 61925 string characters out of 5849290
  363160 words of memory out of 5000000
- 22039 multiletter control sequences out of 15000+600000
+ 22037 multiletter control sequences out of 15000+600000
  504385 words of font info for 100 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,11n,62p,274b,1767s stack positions out of 5000i,500n,10000p,200000b,80000s
