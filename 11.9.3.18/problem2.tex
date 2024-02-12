@@ -1,0 +1,46 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{amsmath,amsfonts,amssymb,float,gvv,graphicx,enumitem,array}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{NCERT Discrete}
+\author{Pragnidhved Reddy\\EE23BTECH11050}
+\date{}
+\parindent 0px
+\begin{document}
+\maketitle
+\newpage
+\bigskip
+\textbf{Question 11.9.3.18:}\\
+ Find the sum to n terms of the sequence $8,88,888,8888$\ldots\\
+ \solution
+\begin{table}[H]
+\centering
+\setlength{\extrarowheight}{8pt}
+\begin{tabular}{|c|c|c|}\hline
+\textbf{Parameter} & \textbf{Value} & \textbf{description}\\ \hline
+$x(0)$ & 8 & First term \\ \hline
+$x(1)$ & 88 & Second term \\ \hline 
+$x(n)$ & $(\sum^{n}_{k=0}8(10)^k)u(n)$ & General term \\ \hline
+$S(n)$ & $S(n)=\sum^{n-1}_{k=0}x(k)$ & Sum of n terms \\ \hline
+\end{tabular}
+\caption{Input parameters}
+\label{tab:table1}
+\end{table}
+\begin{enumerate}
+ \item From \eqref{tab:table1}
+\begin{align}
+\label{eq:1}
+ S(n)&=\sum^{n-1}_{l=0}(\sum^{l}_{k=0}8(10)^k)u(l)
+ \end{align}
+ \item On solving \eqref{eq:1}, we get
+ \begin{align}
+ \implies S(n)&=\left(\frac{8}{81}\right)(10^{n+1}-9n-10)
+ \end{align}
+ \item Z transform of general term
+ \begin{align}
+ X(z)&=\sum_{l=-\infty}^{\infty}(\sum_{k=0}^{l}8(10)^k)u(n)z^{-l}\\[6pt]
+ X(z)&=\sum_{l=0}^{\infty}(\sum_{k=0}^{l}8(10)^k)z^{-l}\\[6pt]
+ \implies X(z)&=\frac{8}{9}\left(\frac{100z^{-1}}{1-10z^{-1}}-\frac{z^{-1}}{1-z^{-1}}\right) \quad \abs{z}>10
+ \end{align}
+ \end{enumerate}
+ \end{document}
