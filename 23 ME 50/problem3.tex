@@ -1,0 +1,39 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{amsmath,amsfonts,amssymb,float,gvv,graphicx,enumitem,array,esint}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{NCERT Discrete}
+\author{Pragnidhved Reddy\\EE23BTECH11050}
+\date{}
+\parindent 0px
+\begin{document}
+\maketitle
+\newpage
+\bigskip
+\textbf{Question GATE 23 ME 50:}\\
+The initial value problem
+$\frac{dy}{dt}+2y=0, y(0)=1 $
+is solved numerically using the forward Euler's method with a constant and positive time step of $\delta $.\\
+Let $y_n$ represent the numerical solution obtained after $n$ steps. The condition $\abs{y_{n+1}} \leq \abs{y_n}$is satisfied if and only if $\delta$ does not exceed\\
+\solution \\
+By forward Euler's method formula 
+\begin{align}
+\label{eq:eq1}
+    y(n+1)=y(n)+\delta  f(x,y)
+\end{align}
+From question we get
+\begin{align}
+\label{eq:eq2}
+    \frac{dy}{dx}=-2y=f(x,y)
+\end{align}
+From \eqref{eq:eq2} in \eqref{eq:eq1}
+\begin{align}
+    y(n+1)&=y(n)+\delta(-2y(n))\\
+    y(n+1)&=y(n)(1-2\delta )\\
+    |y(n+1)|&=|y(n)||1-2\delta | \leq|y(n)|  \\
+    |1-2\delta | &\leq 1\\
+    \implies 0 \leq \delta  &\leq 1
+\end{align}
+From this we can say that the maximum value of $\delta  $ is 1
+\end{document}
+
