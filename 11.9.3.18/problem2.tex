@@ -29,7 +29,7 @@ $S(n)$ & $S(n)=\sum^{n-1}_{k=0}x(k)$ & Sum of n terms \\ \hline
  From \eqref{tab:table1}
 \begin{align}
 \label{eq:1}
- s(n)&=x(n)\circledast u(n)
+ s(n)&=x(n)\star u(n)
  \end{align}
  Z transform of general term
  \begin{align}
@@ -42,10 +42,10 @@ From \eqref{eq:1}, we get
  \label{eq:6}
  \implies S(z)&=\left(\frac{8z^2}{(z-10)(z-1)}\right)\left(\frac{1}{z-1}\right)\\[6pt]
  S(z)&=\left(\frac{8z^2}{(z-10)(z-1)^2}\right)\\[6pt]
- s(n)&=\frac{1}{2\pi j}\oint_{c}\frac{8z^2}{(z-10)(z-1)}\\[6pt]
+ s(n)&=\frac{1}{2\pi j}\oint_{c}\frac{8z^2}{(z-10)(z-1)^2}(z^{n-1})dz
  \end{align}
  \begin{align}
-\implies s(n)&=\lim_{z\to10}\frac{1}{0\displaystyle !\,}\left(\frac{8z^{n+1}}{(z-1)^2}\right)+\lim_{z\to1}\frac{1}{1\displaystyle !\,}\frac{d}{dz}\left(\frac{8z^{n+1}}{(z-10)}\right)\\
+\implies s(n)&=\lim_{z\to10}\frac{1}{1\displaystyle !\,}\left(\frac{8z^{n+1}}{(z-1)^2}\right)+\lim_{z\to1}\frac{1}{0\displaystyle !\,}\frac{d}{dz}\left(\frac{8z^{n+1}}{(z-10)}\right)\\
 \implies s(n)&=\left(\frac{8}{81}\right)(10^{n+1}-9n-10)   
 \end{align}
  \end{document}
