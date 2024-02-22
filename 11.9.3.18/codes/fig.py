@@ -4,8 +4,8 @@ import numpy as np
 data = np.loadtxt('values.dat', delimiter=' ', comments='Values')
 
 # Extracting values for x_1(n) and x_2(n)
-n_values_1 = data[:8, 0]
-x_1_values = data[:8, 1]
+n_values_1 = data[:7, 0]
+x_1_values = data[:7, 1]
 
 
 plt.figure(figsize=(4,4))
