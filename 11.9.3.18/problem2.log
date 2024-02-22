@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.7)  21 FEB 2024 13:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.7)  22 FEB 2024 12:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -320,7 +320,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--28
  []
 
 
-Overfull \hbox (39.1183pt too wide) detected at line 50
+Overfull \hbox (83.02536pt too wide) detected at line 51
 []
  []
 
@@ -335,11 +335,11 @@ Overfull \hbox (39.1183pt too wide) detected at line 50
 Here is how much of TeX's memory you used:
  3954 strings out of 478287
  63319 string characters out of 5849290
- 367589 words of memory out of 5000000
+ 370589 words of memory out of 5000000
  22111 multiletter control sequences out of 15000+600000
  504720 words of font info for 105 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,11n,62p,280b,1835s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,62p,287b,1835s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/
@@ -356,7 +356,7 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmr8a.pfb>
-Output written on problem2.pdf (1 page, 153384 bytes).
+Output written on problem2.pdf (1 page, 153719 bytes).
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream
