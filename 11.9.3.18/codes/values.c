@@ -35,7 +35,7 @@ int main()
 
     fprintf(file, "\nValues for stem plot of x_2(n):\n");  // Add a newline and heading
 
-    for (int i = 1; i < 8; i++) {
+    for (int i = 0; i < 8; i++) {
         int n = i;
         float x_2 = (float)((8)*(power(10,n+2) - 9 * (n) - 19))/81;
         fprintf(file, "%d %.2f\n", n, x_2);
