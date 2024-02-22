@@ -35,19 +35,20 @@ $S(n)$ & $S(n)=\sum^{n-1}_{k=0}x(k)$ & Sum of n terms \\ \hline
  \begin{align}
  X(z)&=\sum_{n=-\infty}^{\infty}(\sum_{k=0}^{n}8(10)^k)u(n)z^{-n}\\[6pt]
  X(z)&=\sum_{n=0}^{\infty}(\sum_{k=0}^{n}8(10)^k)z^{-n}\\[6pt]
- \implies X(z)&=\left(\frac{8z^2}{(z-10)(z-1)}\right) \quad \abs{z}>10
+ \implies X(z)&=\left(\frac{8}{(1-10z^{-1})(1-z^{-1})}\right) \quad \abs{z}>10
 \end{align}
 From \eqref{eq:1}, we get
  \begin{align}
- \label{eq:6}
- \implies S(z)&=\left(\frac{8z^2}{(z-10)(z-1)}\right)\left(\frac{1}{z-1}\right)\\[6pt]
- S(z)&=\left(\frac{8z^2}{(z-10)(z-1)^2}\right)\\[6pt]
- s(n)&=\frac{1}{2\pi j}\oint_{c}\frac{8z^2}{(z-10)(z-1)^2}(z^{n-1})dz
+ S(z)&=(X(z))(U(z))\\
+ S(z)&=\left(\frac{8}{(1-10z^{-1})(1-z^{-1})}\right)\left(\frac{1}{1-z^{-1}}\right)\\[6pt]
+  S(z)&=\left(\frac{8z^2}{(z-10)(z-1)}\right)\left(\frac{z}{z-1}\right)\\[6pt]
+ S(z)&=\left(\frac{8z^3}{(z-10)(z-1)^2}\right)
  \end{align}
-\begin{align}
-s(n)&=\frac{1}{2\pi j} \oint_{c} \left(\frac{800z^{n-1}}{81(z-10)}-\frac{8z^{n-1}}{9(x-1)^2}-\frac{152z^{n-1}}{8(z-1)}\right)z^{n-1}dz\\
-\notag \implies s(n)&=\lim_{z\to10}\frac{1}{0\displaystyle !\,}\left(\frac{800z^{n-1}}{81}\right)-\lim_{z\to1}\frac{1}{1\displaystyle !\,}\frac{d}{dz}\left(\frac{8z^{n-1}}{9}\right) \\ &~~~~~~~~~~-\lim_{z\to1}\frac{1}{0\displaystyle !\,}\left(\frac{152z^{n-1}}{8}\right)\\
- s(n)&=\left(\frac{8}{81}\right)(10^{n+1}-9n-10)   
+ \begin{align}
+ s(n)&=\frac{1}{2\pi j}\oint_{c}\frac{8z^3}{(z-10)(z-1)^2}(z^{n-1})dz\\
+s(n)&=\frac{1}{2\pi j} \oint_{c} \left(\frac{800z^{n}}{81(z-10)}-\frac{8z^{n}}{9(x-1)^2}-\frac{152z^{n}}{8(z-1)}\right)z^{n-1}dz\\
+\notag \implies s(n)&=\lim_{z\to10}\frac{1}{0\displaystyle !\,}\left(\frac{800z^{n}}{81}\right)-\lim_{z\to1}\frac{1}{1\displaystyle !\,}\frac{d}{dz}\left(\frac{8z^{n}}{9}\right) \\ &~~~~~~~~~~-\lim_{z\to1}\frac{1}{0\displaystyle !\,}\left(\frac{152z^{n}}{8}\right)\\
+ s(n)&=\left(\frac{8}{81}\right)(10^{n+2}-9n-19)   
 \end{align}
 \begin{figure}[h!]
     \centering
