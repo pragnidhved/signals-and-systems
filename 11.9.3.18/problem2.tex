@@ -38,18 +38,21 @@ $S(n)$ & $S(n)=\sum^{n-1}_{k=0}x(k)$ & Sum of n terms \\ \hline
  X(z)&=8\left(\sum_{n=0}^{\infty}(10)^n(z^{-n})\right)\left(\sum_{n=0}^{\infty}z^{-n}\right)\\
  \implies X(z)&=\left(\frac{8}{(1-10z^{-1})(1-z^{-1})}\right) \quad \abs{z}>10
 \end{align}
-From \eqref{eq:1}, we get
+From \eqref{eq:eq1}, we get
  \begin{align}
  S(z)&=(X(z))(U(z))\\
  S(z)&=\left(\frac{8}{(1-10z^{-1})(1-z^{-1})}\right)\left(\frac{1}{1-z^{-1}}\right)\\[6pt]
  S(z)&=\left(\frac{8}{(1-10z^{-1})(1-z^{-1})^2}\right)
 \end{align}
 \begin{align}
- s(n)&=\frac{1}{2\pi j}\oint_{c}\frac{8}{(1-10z^{-1})(1-z^{-1})^2}(z^{n-1})dz\\
-\notag s(n)&=\frac{1}{2\pi j} \oint_{c} \left(\frac{800z^{n-1}}{81(1-10z^{-1})}\right)dz\\ &~~-
-\oint \left(\frac{8z^{n-2}}{9(1-z^{-1})^2}\right)dz-\oint \left(\frac{152z^{n-1}}{8(1-z^{-1})} \right)dz\\
-\notag \implies s(n)&=\lim_{z\to10}\frac{1}{0\displaystyle !\,}\left(\frac{800z^n}{81}\right)-\lim_{z\to1}\frac{1}{1\displaystyle !\,}\frac{d}{dz}\left(\frac{8z^n}{9}\right)\\ &~~~~~~~~~~-\lim_{z\to1}\frac{1}{0\displaystyle !\,}\left(\frac{152z^n}{8}\right)\\
- s(n)&=\left(\frac{8}{81}\right)(10^{n+2}-9n-19)   
+ S(z)&=\frac{-224}{81(z-1)}-\frac{8}{9(z-1)^2}+\frac{8000}{81(z-10)}+8\\
+ S(z)&=\frac{-224z(z)^{-1}}{81(z-1)}-\frac{8z(z)^{-1}}{9(z-1)^2}+\frac{8000z(z)^{-1}}{81(z-10)}+8\\
+ \notag S(z)&=\frac{-224U(z)(z)^{-1}}{81}-\frac{8V(z)(z)^{-1}}{9}+\frac{8000W(z)(z)^{-1}}{81}\\&~~~~~
+ +8\\
+ \notag s(n)&=\frac{-224u(n-1)}{81}-\frac{8v(n-1)}{9}+\frac{8000w(n-1)}{81}\\&~~~~
+ +8\delta (n)\\
+ \notag s(n)&=\frac{-224u(n-1)}{81}-\frac{8(n-1)u(n-1)}{9}\\&~~~~~~~
+ +\frac{8000(10^{n-1})u(n-1)}{81}+8\delta (n)\\ 
 \end{align}
 \begin{figure}[h!]
     \centering
