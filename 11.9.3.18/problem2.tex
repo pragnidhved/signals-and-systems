@@ -28,19 +28,20 @@ $S(n)$ & $S(n)=\sum^{n-1}_{k=0}x(k)$ & Sum of n terms \\ \hline
 \end{table}
  From \eqref{tab:table1}
 \begin{align}
-\label{eq:1}
+\label{eq:eq1}
  s(n)&=x(n)* u(n)
  \end{align}
  Z transform of general term
  \begin{align}
  X(z)&=\sum_{n=-\infty}^{\infty}(\sum_{k=0}^{n}8(10)^k)u(n)z^{-n}\\[6pt]
- X(z)&=\sum_{n=0}^{\infty}(\sum_{k=0}^{n}8(10)^k)z^{-n}\\[6pt]
+ X(z)&=8\sum_{n=0}^{\infty}\left(\sum_{k=0}^{n}(10)^k\right)u(n)z^{-n}\\[6pt]
+ X(z)&=8\left(\sum_{n=0}^{\infty}(10)^n(z^{-n})\right)\left(\sum_{n=0}^{\infty}z^{-n}\right)\\
  \implies X(z)&=\left(\frac{8}{(1-10z^{-1})(1-z^{-1})}\right) \quad \abs{z}>10
 \end{align}
 From \eqref{eq:1}, we get
  \begin{align}
  S(z)&=(X(z))(U(z))\\
- S(z)&=\left(\frac{8}{(1-10z^{-1})(1-z^{-1}})\right)\left(\frac{1}{1-z^{-1}}\right)\\[6pt]
+ S(z)&=\left(\frac{8}{(1-10z^{-1})(1-z^{-1})}\right)\left(\frac{1}{1-z^{-1}}\right)\\[6pt]
  S(z)&=\left(\frac{8}{(1-10z^{-1})(1-z^{-1})^2}\right)
 \end{align}
 \begin{align}
