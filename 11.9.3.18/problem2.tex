@@ -10,6 +10,17 @@
 \maketitle
 \newpage
 \bigskip
+\textbf{Results for reference:}\\
+\begin{align}
+\label{eq:eq1}
+Z(\delta (n)) &=1\\
+\label{eq:eq2}
+Z(u(n-1))&=U(Z)z^{-1}\\
+\label{eq:eq3}
+Z(a^{n-k}u(n-k))&=\frac{(z)z^{-k}}{z-10}\\
+\label{eq:eq4}
+Z((n-k)u(n-k))&=\frac{(z)z^{-k}}{(z-1)^2}
+\end{align}
 \textbf{Question 11.9.3.18:}\\
  Find the sum to n terms of the sequence $8,88,888,8888$\ldots\\
  \solution \\
@@ -28,7 +39,7 @@ $S(n)$ & $S(n)=\sum^{n-1}_{k=0}x(k)$ & Sum of n terms \\ \hline
 \end{table}
  From \eqref{tab:table1}
 \begin{align}
-\label{eq:eq1}
+\label{eq:eq5}
  s(n)&=x(n)* u(n)
  \end{align}
  Z transform of general term
@@ -38,7 +49,7 @@ $S(n)$ & $S(n)=\sum^{n-1}_{k=0}x(k)$ & Sum of n terms \\ \hline
  X(z)&=8\left(\sum_{n=0}^{\infty}(10)^n(z^{-n})\right)\left(\sum_{n=0}^{\infty}z^{-n}\right)\\
  \implies X(z)&=\left(\frac{8}{(1-10z^{-1})(1-z^{-1})}\right) \quad \abs{z}>10
 \end{align}
-From \eqref{eq:eq1}, we get
+From \eqref{eq:eq5}, we get
  \begin{align}
  S(z)&=(X(z))(U(z))\\
  S(z)&=\left(\frac{8}{(1-10z^{-1})(1-z^{-1})}\right)\left(\frac{1}{1-z^{-1}}\right)\\[6pt]
@@ -46,13 +57,12 @@ From \eqref{eq:eq1}, we get
 \end{align}
 \begin{align}
  S(z)&=\frac{-224}{81(z-1)}-\frac{8}{9(z-1)^2}+\frac{8000}{81(z-10)}+8\\
- S(z)&=\frac{-224z(z)^{-1}}{81(z-1)}-\frac{8z(z)^{-1}}{9(z-1)^2}+\frac{8000z(z)^{-1}}{81(z-10)}+8\\
- \notag S(z)&=\frac{-224U(z)(z)^{-1}}{81}-\frac{8V(z)(z)^{-1}}{9}+\frac{8000W(z)(z)^{-1}}{81}\\&~~~~~
- +8\\
- \notag s(n)&=\frac{-224u(n-1)}{81}-\frac{8v(n-1)}{9}+\frac{8000w(n-1)}{81}\\&~~~~
- +8\delta (n)\\
+ S(z)&=\frac{-224z(z)^{-1}}{81(z-1)}-\frac{8z(z)^{-1}}{9(z-1)^2}+\frac{8000z(z)^{-1}}{81(z-10)}+8
+ \end{align}
+ From \eqref{eq:eq1},\eqref{eq:eq2},\eqref{eq:eq3} and \eqref{eq:eq4}
+ \begin{align}
  \notag s(n)&=\frac{-224u(n-1)}{81}-\frac{8(n-1)u(n-1)}{9}\\&~~~~~~~
- +\frac{8000(10^{n-1})u(n-1)}{81}+8\delta (n)\\ 
+ +\frac{8000(10^{n-1})u(n-1)}{81}+8\delta (n)
 \end{align}
 \begin{figure}[h!]
     \centering
