@@ -10,16 +10,13 @@ y_values_continuous = np.exp(-2 * t_values)
 # Plotting the continuous graph
 plt.plot(t_values, y_values_continuous, label=r'$e^{-2t}$ (continuous)')
 
-# Define parameters for the discrete plot
-n_values = np.arange(0, 10)  # Define the range of n values
-y_values_discrete = [1]  # Initial condition y(0) = 1
+data = np.loadtxt('values.dat', delimiter=' ', comments='Values')
 
-# Calculate the discrete values of y(n) iteratively
-for n in range(1, len(n_values)):
-    y_values_discrete.append(y_values_discrete[-1] / 2)
-
+# Extracting values for x_1(n) and x_2(n)
+n_values_1 = data[:7, 0]
+x_1_values = data[:7, 1]
 # Plotting the discrete graph
-plt.stem(n_values, y_values_discrete, linefmt='C1-', markerfmt='C1o', basefmt='C1_', label=r'$y(n+1) = \frac{y(n)}{d}$ (discrete)')
+plt.stem(n_values_1, x_1_values, linefmt='C1-', markerfmt='C1o', basefmt='C1_', label='discrete')
 
 # Adding labels and title
 plt.xlabel('t / n')
