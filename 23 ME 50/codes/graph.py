@@ -8,7 +8,7 @@ data = np.loadtxt('values.dat', delimiter=' ', comments='Values')
 n_values_2 = data[:7, 0]
 x_2_values = data[:7, 1]
 # Plotting the discrete graph
-plt.stem(n_values_2, x_2_values, linefmt='C1-', markerfmt='C1o', basefmt='C1_', label='discrete')
+plt.stem(n_values_2, x_2_values, linefmt='C1-', markerfmt='C1o', basefmt='C1_', label='numerical')
 
 
 
@@ -16,7 +16,7 @@ plt.stem(n_values_2, x_2_values, linefmt='C1-', markerfmt='C1o', basefmt='C1_', 
 n_values_1 = data[:7, 0]
 x_1_values = data[:7, 1]
 # Plotting the discrete graph
-plt.stem(n_values_1, x_1_values, linefmt='C1-', markerfmt='C1o', basefmt='C1_', label='discrete')
+plt.stem(n_values_1, x_1_values, linefmt='C1-', markerfmt='C2o', basefmt='C1_', label='theoritical')
 
 # Adding labels and title
 plt.xlabel('t / n')
