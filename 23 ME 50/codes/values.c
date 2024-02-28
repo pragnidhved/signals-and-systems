@@ -26,7 +26,7 @@ int main()
     n[0]=1;
     for (int i = 0; i < 9; i++) {
         
-        n[i+1]=(n[i])/2;
+        n[i+1]=(n[i])/5;
         fprintf(file, "%d %f\n", i, n[i]);
     }
 
