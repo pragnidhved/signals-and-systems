@@ -26,20 +26,9 @@ int main()
     n[0]=1;
     for (int i = 0; i < 9; i++) {
         
-        n[i+1]=-(n[i]);
+        n[i]=(power(0.2,i));
         fprintf(file, "%d %f\n", i, n[i]);
     }
-fprintf(file, "Values for stem plot of x_2(n):\n");
-    float m[9];
-    int z=0;
-    m[0]=1;
-    fprintf(file, "%d %f\n", z+1, m[0]);
-    for (int i = 1; i < 8; i++) {
-        
-        m[i]=power((-1),i);
-        fprintf(file, "%d %f\n", i+1, m[i]);
-    }
-
 
     fclose(file);  // Close the file
 
