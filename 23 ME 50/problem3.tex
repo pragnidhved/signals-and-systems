@@ -58,6 +58,16 @@ y(t)&=\mathcal{L}^{-1}Y(s)\\
 \mathcal{L}^{-1}\left(\frac{1}{s+k}\right)&=e^{-kt}u(t)\\
 \implies y(t)&=e^{-2t}u(t) 
 \end{align}
+The difference equation is 
+\begin{align}
+y(n+1)-y(n)&=-2y(n)\\
+y(n+1)&=-y(n)\\
+Z(y(n))&=Y(z)\\
+Z(y(n+1))&=zY(z)-y(0)\\
+\implies zY(z)-y(0)&=-Y(z)\\
+Y(z)&=\frac{1}{z+1}\\
+\frac{1}{z+1}&\overset{Z}\longleftrightarrow (-1)^{n}u(n)
+\end{align}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\columnwidth]{figs/graph.png}
