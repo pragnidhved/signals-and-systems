@@ -17,8 +17,7 @@ Given z transform of the signal is $\frac{z^2}{(z-a)^{2}}$\\
 Let the signal be $x(n)$
 \begin{align}
 x(n)&=\mathcal{Z}^{-1}\left(\frac{z^2}{(z-a)^{2}}\right)\\[6pt]
-x(n)&=\frac{1}{2\pi j}\oint_{c}\left(\frac{z^2}{(z-a)^{2}}\right) z^{n-1}dz\\[6pt]
-\implies x(n)&=\lim_{z\to a}\frac{1}{(1)\displaystyle !\,}\left(\frac{d}{dz}(z^{n+1})\right)\\[6pt]
+\frac{z^2}{(z-a)^2}&\overset{Z}\longleftrightarrow (n+1)a^nu(n)\quad \text{(z transform pairs)}\\[6pt] 
 x(n)&=(n+1)a^n u(n)
 \end{align}
 \end{document}
