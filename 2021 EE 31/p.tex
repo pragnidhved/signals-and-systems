@@ -11,13 +11,13 @@
 \newpage
 \bigskip
 \textbf{GATE 21 EE 31:}\\
-The causal signal with z-transform $\frac{z^2}{(z-a)^{2}}$ is \\
+The causal signal with z-transform $\frac{z^2}{(z-a)^{2}}$  is \\
 \solution\\
-Given z transform of the signal is $\frac{z^2}{(z-a)^{2}}$\\
+Given z transform of the signal is $\frac{z^2}{(z-a)^{2}}$= $\left(\frac{1}{1-az^{-1}}\right)^2$\\
 Let the signal be $x(n)$
 \begin{align}
-x(n)&=\mathcal{Z}^{-1}\left(\frac{z^2}{(z-a)^{2}}\right)\\[6pt]
-\frac{z^2}{(z-a)^2}&\overset{Z}\longleftrightarrow (n+1)a^nu(n)\quad \abs{z}>\abs{a}\\[6pt] 
+x(n)&=\mathcal{Z}^{-1}\left(\frac{1}{1-az^{-1}}\right)^2\\[6pt]
+\left(\frac{1}{1-az^{-1}}\right)^2&\overset{Z}\longleftrightarrow (n+1)a^nu(n)\quad \abs{z}>\abs{a}\\[6pt] 
 x(n)&=(n+1)a^n u(n)
 \end{align}
 \end{document}
