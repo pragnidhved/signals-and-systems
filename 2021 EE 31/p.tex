@@ -1,0 +1,24 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{amsmath,amsfonts,amssymb,float,gvv,graphicx,enumitem,array,esint}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{GATE 2021-EE-31}
+\author{Pragnidhved Reddy\\EE23BTECH11050}
+\date{}
+\parindent 0px
+\begin{document}
+\maketitle
+\newpage
+\bigskip
+\textbf{GATE 21 EE 31:}\\
+The causal signal with z-transform $\frac{z^2}{(z-a)^{2}}$ is \\
+\solution\\
+Given z transform of the signal is $\frac{z^2}{(z-a)^{2}}$\\
+Let the signal be $x(n)$
+\begin{align}
+x(n)&=\mathcal{Z}^{-1}\left(\frac{z^2}{(z-a)^{2}}\right)\\[6pt]
+x(n)&=\frac{1}{2\pi j}\oint_{c}\left(\frac{z^2}{(z-a)^{2}}\right) z^{n-1}dz\\[6pt]
+\implies x(n)&=\lim_{z\to a}\frac{1}{(1)\displaystyle !\,}\left(\frac{d}{dz}(z^{n+1})\right)\\[6pt]
+x(n)&=(n+1)a^n u(n)
+\end{align}
+\end{document}
