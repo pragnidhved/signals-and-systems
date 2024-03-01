@@ -26,6 +26,13 @@ int main()
         x[i]=(i+1)*power(0.5,i);
         fprintf(file, "%d %f\n", i, x[i]);
     }
+     fprintf(file, "\nValues for stem plot of x_2(n):\n");  // Add a newline and heading
+    float y[10];
+    for (int i = 0; i < 8; i++) {
+        y[i]=((i+1)*(power(0.5,i+2))-(i+2)*(power(0.5,i+1))+1)/(0.25);
+        fprintf(file, "%d %f\n", i, y[i]);
+    }
+
     fclose(file);  // Close the file
 
     return 0;
