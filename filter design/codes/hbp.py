@@ -11,13 +11,12 @@ B_val =0.0883
 s_L = (s**2 + omega0_val**2) / (B_val * s)
 
 # Given roots
-s1 = -0.3028 - 1.1781j
-s2 = -0.7311 - 0.4880j
-s3 = -0.7311 + 0.4880j
-s4 = -0.3028 + 1.1781j
-
+s1 = -0.1982 - 1.0404j
+s2 = -0.4785 - 0.4310j
+s3 = -0.4785 + 0.4310j
+s4 = -0.1982 + 1.0404j
 # Define the given polynomial expression
-polynomial_expr = 302.85/ ((s_L - s1) * (s_L - s2) * (s_L - s3) * (s_L - s4))
+polynomial_expr = 768.07/ ((s_L - s1) * (s_L - s2) * (s_L - s3) * (s_L - s4))
 
 # Simplify the expression
 simplified_expr = simplify(polynomial_expr)

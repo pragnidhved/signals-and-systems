@@ -29,4 +29,4 @@ plt.ylabel('|H(r$\omega$)|')
 plt.title('FIR LOW PASS FILTER')
 plt.grid(True)
 
-plt.savefig("p7.png")
+plt.savefig("P7.png")

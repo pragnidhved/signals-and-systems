@@ -2,11 +2,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Given parameters
-s1 = -0.3028 - 1.1781j
-s2 = -0.7311 - 0.4880j
-s3 = -0.7311 + 0.4880j
-s4 = -0.3028 + 1.1781j
-epsilon = 0.11
+s1 = -0.1982 - 1.0404j
+s2 = -0.4785 - 0.4310j
+s3 = -0.4785 + 0.4310j
+s4 = -0.1982 + 1.0404j
+epsilon = 0.279
 Omega_Lp = 1
 
 # Generate the denominator polynomial
@@ -31,7 +31,7 @@ Ha_values = 1 / np.sqrt(1 + epsilon**2 * c_N_interpolated**2)
 plt.figure()
 plt.plot(w, Ha_values, '*', label='Design')
 
-G_LP = 1.1362
+G_LP = 1.1
 num = G_LP
 
 # Calculate magnitude response for epsilon = 0.5
@@ -48,5 +48,5 @@ plt.ylabel('|H_{a,LP}($\Omega$)|')
 plt.legend()
 plt.grid(True)
 plt.ylim(0, 1.1)  # Set the y-axis limits from 0 to 2
-plt.savefig("p3.png")
+plt.savefig("P3.png")
 
