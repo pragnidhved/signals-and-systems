@@ -138,7 +138,7 @@ N \geq \left\lceil \frac{\cosh^{-1}\sqrt{D_2/D_1}}{\cosh^{-1}\Omega_{Ls}} \right
 \end{eqnarray}
 where $D_1 = \frac{1}{(1 - \delta)^2}-1$ and $D_2 = \frac{1}{\delta^2} - 1$ and $\left \lceil . \right \rceil$ is known as the ceiling operator . 
 \input{tables/table.tex}
-we get $N\geq 4$ and $0.110 \leq \epsilon \leq 0.61$\\
+we get $N\geq 4$ and $0.279 \leq \epsilon \leq 0.61$\\
 The below code plots \eqref{eq:mag_freq_response} for different values of $\epsilon$ .
 \begin{lstlisting}
 https://github.com/pragnidhved/signals-and-systems/blob/main/filter%20design/codes/P1.py
@@ -146,7 +146,7 @@ https://github.com/pragnidhved/signals-and-systems/blob/main/filter%20design/cod
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\linewidth]{fig/P1.png}
-    \caption{The Analog Low-Pass Frequency Response for $0.110  \leq \epsilon \leq 0.61$}
+    \caption{The Analog Low-Pass Frequency Response for $0.279  \leq \epsilon \leq 0.61$}
     \label{fig:H_for_diff_eb}
 \end{figure}
 In \figref{fig:H_for_diff_eb} we can observe the equiripple behaviour in passband and monotonic behaviour in stopband. As the value of $\epsilon$ increases the value of $\vert H_{a,LP}(j\Omega_L)\vert$ decreases.\\
@@ -201,10 +201,10 @@ We know that from (17):-
 \begin{align}
     \abs{ H_{a,LP}(s_L)} &= \frac{1}{\sqrt{1+\epsilon^2}} \text{at} \hspace{5pt} \Omega_{L}=1 \implies s_{L} = j \label{eq:Gain_eq_LP} 
 \end{align}
-Substituting respective values in \eqref{eq:Gain_eq_LP} we get $G_{LP}=1.1362$
+Substituting respective values in \eqref{eq:Gain_eq_LP} we get $G_{LP}=0.448$
 \begin{align}
-     H_{a,LP}(s_L) &= \frac{1.1362}{\brak{s_L-s_1}\brak{s_L-s_2}\brak{s_L-s_3}\brak{s_L-s_4}}\\
-     &= \frac{1.1362}{s_{L}^4 + 2.0678s_L^3 + 3.1377s_L^2 + 2.6313s_L + 1.1432}\label{eq:design}
+     H_{a,LP}(s_L) &= \frac{0.448}{\brak{s_L-s_1}\brak{s_L-s_2}\brak{s_L-s_3}\brak{s_L-s_4}}\\
+     &= \frac{0.448}{s_{L}^4 + 1.3534s_L^3 + 1.9157s_L^2 + 1.2378s_L + 0.4652}\label{eq:design}
 \end{align}
 \begin{lstlisting}
 https://github.com/pragnidhved/signals-and-systems/blob/main/filter%20design/codes/P3.py
@@ -232,11 +232,11 @@ As there is one to one correspondence between the filters so $\Omega=\Omega_{p1}
 \end{align}
 Substituting \eqref{eq:res1} in \eqref{eq:res2} we obtain Gain of required bass pass filter:
 \begin{align}
-    G_{BP} &= 302.85
+    G_{BP} &= 768.07
 \end{align}
 Thus the response in s domain 
 \begin{align}
-    H_{a,BP}\brak{s} &= \frac{302.85s^4}{164499.66s^8 + 3003.4s^7 + 8412.19s^6 + 1126.65s^5 + 1561.67s^4 + 137.14s^3 + 124.65s^2 + 5.41s + 3.61} \label{eq:magnitude_bandpass_sdom}
+    H_{a,BP}\brak{s} &= \frac{768.07s^4}{164499.66s^8 + 1965.82s^7 + 8255.46s^6 + 731.92s^5 + 11522.84s^4 + 89.09s^3 + 122.33s^2 + 3.54s + 3.61} \label{eq:magnitude_bandpass_sdom}
 \end{align}
 The expressions in the s-domain and gain factors are computed by writing a Python code. \\
 In Figure 3, we plot $\vert H_{a,BP}(j\Omega)\vert$ as a function of $\Omega$ for both positve as
@@ -260,7 +260,7 @@ From the bilinear transformation, we obtain the digital bandpass filter from the
 \end{align}
 Substituting $s=\frac{1-z^{-1}}{1+z^{-1}}$ in \eqref{eq:magnitude_bandpass_sdom} and calculating expression using a python code we get :
 \begin{align}
-    H_{d,BP}(z) &= \frac{302.85z^8 -1211.4z^6 + 1817.1z^4 - 1211.4z^2 + 302.85}{30824.38z^8 - 184685.32z^7 + 528188.0z^6 - 923863.44z^5 + 1075730.52z^4 - 85173.84z^3 + 448996.48z^2 - 144751.6z + 22279.18}
+    H_{d,BP}(z) &= \frac{768.07z^8 -3072.28z^6 + 4608.42z^4 - 3072.28z^2 + 768.07}{29144.27z^8 - 177160.26z^7 + 514040.38z^6 - 912061.22z^5 + 107708.04z^4 - 864831.34z^3 + 462182.34z^2 - 151041.58z + 23563.53}
 \end{align}
  \begin{lstlisting}
 https://github.com/pragnidhved/signals-and-systems/blob/main/filter%20design/codes/P5.py
